@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:id="@+id/share_shop_to_wechat0"
+        android:orderInCategory="3"
+        android:title=""
+        android:icon="@mipmap/ic_weibo"
+        >
+    </item>
+    <item
+        android:id="@+id/share_shop_to_wechat1"
+        android:orderInCategory="3"
+        android:title="分享店铺到微信朋友圈"
+        >
+    </item>
+
+
+
+    <item
+        android:id="@+id/share_shop_to_qq"
+        android:orderInCategory="3"
+        android:title="分享店铺到QQ"
+        >
+    </item>
+    <item
+        android:id="@+id/share_shop_to_microBlog"
+        android:orderInCategory="3"
+        android:title="分享店铺到微博"
+        >
+    </item>
+</menu>

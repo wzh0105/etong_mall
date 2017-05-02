@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:background="@color/view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/navi_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whilte"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_home"
+                style="@style/MMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/btn_selected_home"
+                android:paddingBottom="1dip"
+                android:paddingTop="7.5dip"
+                android:scaleType="matrix"
+                android:text="首页"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+
+        <!--本地-->
+        <RelativeLayout
+            android:id="@+id/rl_facility"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_local"
+                style="@style/MMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/btn_selected_local"
+                android:paddingBottom="1dip"
+                android:paddingTop="7.5dip"
+                android:scaleType="matrix"
+                android:text="本地"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--e专区-->
+        <RelativeLayout
+            android:id="@+id/rl_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_prefecture"
+                style="@style/MMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/btn_selected_prefecture"
+                android:paddingBottom="1dip"
+                android:paddingTop="7.5dip"
+                android:scaleType="matrix"
+                android:text="e专区"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--购物车-->
+        <RelativeLayout
+            android:id="@+id/rl_shopping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_shopping"
+                style="@style/MMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/btn_selected_shopping"
+                android:paddingBottom="1dip"
+                android:paddingTop="7.5dip"
+                android:scaleType="matrix"
+                android:text="购物车"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!--我的-->
+        <RelativeLayout
+            android:id="@+id/rl_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_mine"
+                style="@style/MMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/btn_selected_mine"
+                android:paddingBottom="1dip"
+                android:paddingTop="7.5dip"
+                android:scaleType="matrix"
+                android:text="我的"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/whilte"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navi_bottom"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentLeft="true"></RelativeLayout>
+</RelativeLayout>

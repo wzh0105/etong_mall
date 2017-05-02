@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_travel_around"
+        android:layout_width="match_parent"
+        android:background="@color/whilte"
+        android:layout_height="105dp">
+        <ImageView
+            android:id="@+id/img_restaurant"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_shaitu"
+            />
+        <TextView
+            android:id="@+id/tx_restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_restaurant"
+            android:textColor="#1A1A1A"
+            android:textSize="15sp"
+            android:text="咖啡时光西餐厅"
+            android:layout_toRightOf="@+id/img_restaurant"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/img_shop_pingxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_restaurant_name"
+            android:layout_below="@+id/tx_restaurant_name"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_goods_pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_restaurant_name"
+            android:layout_below="@+id/tx_restaurant_name"
+            android:layout_marginTop="10dp"
+            android:text="4.5分"
+            android:layout_marginLeft="110dp"
+            android:textColor="@color/homepage_orange"
+            />
+
+        <TextView
+            android:id="@+id/tx_restaurant_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_restaurant_name"
+            android:layout_alignBottom="@+id/img_restaurant"
+            android:textColor="@color/main_color_red"
+            android:text="¥49"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

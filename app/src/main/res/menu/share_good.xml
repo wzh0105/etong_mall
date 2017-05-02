@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:icon="@mipmap/ic_weibo"
+        android:id="@+id/share_shop_to_wechat0"
+        android:orderInCategory="1"
+        android:title=""
+        >
+    </item>
+
+    <item
+        android:icon="@mipmap/ic_weibo"
+        android:id="@+id/share_shop_to_wechat1"
+        android:orderInCategory="1"
+        android:title=""
+        >
+    </item>
+    <item
+        android:icon="@mipmap/ic_weibo"
+        android:id="@+id/share_shop_to_qq"
+        android:orderInCategory="1"
+        android:title=""
+        >
+    </item>
+    <item
+        android:icon="@mipmap/ic_weibo"
+        android:id="@+id/share_shop_to_microBlog"
+        android:orderInCategory="1"
+        android:title=""
+        >
+    </item>
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_label"
+        android:layout_width="@dimen/activity_size_90"
+        android:layout_height="@dimen/activity_size_30"
+        android:layout_centerInParent="true"
+        android:text="黑色"
+        android:textColor="@color/black2"
+        android:background="@drawable/standard_selector_whilte_red" />
+</RelativeLayout>

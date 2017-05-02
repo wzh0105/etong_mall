@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.xiaocool.android_etong.view.SquareLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hyx_default"/>
+
+    </cn.xiaocool.android_etong.view.SquareLayout>
+
+    <TextView
+        android:id="@+id/item_descrp_tv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="我的房间爱搜大家欧莎激
+        动阿克苏大声道的房间爱搜大家欧莎激动阿克苏大声道
+        的房间爱搜大家欧莎激动阿克苏大声道的房间爱搜大家
+        欧莎激动阿克苏大声道"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/item_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:text="¥20.9"/>
+
+
+        <TextView
+            android:id="@+id/item_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray3"
+            android:textSize="14sp"
+            android:text="已购30件"/>
+    </RelativeLayout>
+</LinearLayout>

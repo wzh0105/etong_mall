@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/edit_good_iv_pic_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/delete_markView"
+            android:layout_width="@dimen/activity_size_20"
+            android:layout_height="@dimen/activity_size_20"
+            android:layout_marginTop="@dimen/activity_size_20"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/icon_delete"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

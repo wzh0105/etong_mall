@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaocool.android_etong.view.SwipeListLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/whilte"
+    android:layout_marginTop="@dimen/activity_size_1"
+    android:id="@+id/sll_main"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_top"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#66ff0000"-->
+            <!--android:gravity="center"-->
+            <!--android:text="置顶" />-->
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:textColor="@color/whilte"
+            android:gravity="center"
+            android:text="删除" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_100"
+        android:background="@color/whilte">
+        <!--左边图片-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/everyday_choiceness_pic"
+                android:layout_width="@dimen/activity_size_90"
+                android:layout_height="@dimen/activity_size_90"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <!--右边-->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_size_3"
+            android:layout_marginRight="@dimen/activity_size_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/everyday_choiceness_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:text="e通商城商品"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/black2"
+                android:textSize="@dimen/activity_size_14" />
+
+            <TextView
+                android:id="@+id/everyday_choiceness_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="2016年夏装连衣裙"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/activity_size_14" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_60"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/everyday_choiceness_price"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/activity_size_5"
+                        android:layout_height="@dimen/activity_size_25"
+                        android:layout_centerVertical="true"
+                        android:text="¥15"
+                        android:textColor="@color/red1"
+                        android:textSize="@dimen/activity_size_15" />
+                </LinearLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/everyday_choiceness_btn_buy"-->
+                        <!--android:layout_width="@dimen/activity_size_90"-->
+                        <!--android:layout_height="@dimen/activity_size_30"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="@dimen/activity_size_10"-->
+                        <!--android:background="@drawable/button_shape"-->
+                        <!--android:text="马上抢"-->
+                        <!--android:textColor="@color/whilte" />-->
+                <!--</RelativeLayout>-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</cn.xiaocool.android_etong.view.SwipeListLayout>

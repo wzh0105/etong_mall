@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_90"
+        android:background="@color/whilte">
+        <!--左边图片-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/my_like_good_pic"
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="@dimen/activity_size_80"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+        <!--右边-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/my_like_good_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/activity_size_14"
+                    android:text="这是第一件收藏宝贝"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/activity_size_14" />
+
+
+                <ImageView
+                    android:id="@+id/my_like_good_star_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_size_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_30"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/my_like_good_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="¥15"
+                        android:textColor="@color/red1"
+                        android:textSize="@dimen/activity_size_15" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/my_like_good_btn_buy"
+                        android:layout_width="@dimen/activity_size_90"
+                        android:layout_height="@dimen/activity_size_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_size_10"
+                        android:background="@drawable/button_shape"
+                        android:text="立即购买"
+                        android:textColor="@color/whilte" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

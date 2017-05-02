@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/ic_banner"
+                android:layout_marginBottom="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="151dp" />
+            <RelativeLayout
+                android:background="@color/whilte"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="农副产品列表"
+                    android:textColor="@color/main_color_red"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_color">
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="暂无商品列表"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/gray3"
+                />
+            <!--<include layout="@layout/prefecturemy_item"/>-->
+            <!--<include layout="@layout/prefecturemy_item"/>-->
+            <!--<include layout="@layout/prefecturemy_item"/>-->
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

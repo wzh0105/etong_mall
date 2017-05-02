@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray2">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:layout_marginRight="@dimen/activity_size_10"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1、我对哪个行业熟悉\n2、我有没有最优质的货源，货源从哪里来\n3、我自身的优势是什么，有没有什么人脉可以帮助到我的。\n4、我做这个行业未来的发展趋势是怎么样的\n5、如果我做的话，我将如何做到差异化，个性化，做好突围。\n6、我具备哪些特殊的技能可以有助于我做好这个店铺的，有什么不会的，需要马上学习。\n7、我有没有做好预算，我的钱够不够，怎么解决资金问题。\n8、设定目标，我想在多长的时间内达到什么样的效果。\n9、我是把我的店铺当成我的事业来做的吗？  问好自己这些问题你至少心里会有底了，不会怕，不会迷茫。"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_14" />
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+</LinearLayout>

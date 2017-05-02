@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gray_title">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_fanhui_left_red" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新客专享"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"></RelativeLayout>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="10dp">
+
+            </com.daimajia.slider.library.SliderLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <Button
+                    android:id="@+id/btn_all"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/whilte"
+                    android:text="智能排序"
+                    android:textColor="@drawable/text_color_red"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_nearly"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/whilte"
+                    android:text="价格不限"
+                    android:textColor="@drawable/text_color_red"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/view_color">
+
+            </RelativeLayout>
+
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/fragment_container"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_below="@+id/ll_top">-->
+
+            <!--</LinearLayout>-->
+            <ListView
+                android:id="@+id/list_New_Users"
+                android:dividerHeight="2dp"
+                android:layout_width="match_parent"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

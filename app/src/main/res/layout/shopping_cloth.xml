@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/whilte">
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+
+            <CheckBox
+                android:id="@+id/cb_store"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:button="@drawable/checkbox_good" />
+            <RelativeLayout
+                android:id="@+id/rl_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="41dp"
+            android:text="ETONG欧美高端女装"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="编辑"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:background="@color/whilte"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="153dp">-->
+    <!--<CheckBox-->
+    <!--android:id="@+id/cb_select"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/img_shopping_chanpin"-->
+    <!--android:layout_width="101dp"-->
+    <!--android:layout_height="101dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="41dp"-->
+    <!--android:background="@mipmap/ic_chanpin"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_shopping_cloth_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_alignTop="@+id/img_shopping_chanpin"-->
+    <!--android:layout_marginLeft="151dp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="13sp"-->
+    <!--android:maxLines="2"-->
+    <!--android:text="2016春装新款欧美时尚长裙宽松休闲仙女气质超长款拖地连衣裙"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_shopping_cloth_color"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tx_shopping_cloth_name"-->
+    <!--android:layout_marginLeft="151dp"-->
+    <!--android:textColor="@color/gray"-->
+    <!--android:textSize="12sp"-->
+    <!--android:maxLines="2"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="颜色分类：天蓝色"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_shopping_cloth_size"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tx_shopping_cloth_color"-->
+    <!--android:layout_marginLeft="151dp"-->
+    <!--android:textColor="@color/gray"-->
+    <!--android:textSize="12sp"-->
+    <!--android:maxLines="2"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="尺码: S"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_shopping_cloth_price"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tx_shopping_cloth_size"-->
+    <!--android:layout_marginLeft="151dp"-->
+    <!--android:textColor="@color/main_color_red"-->
+    <!--android:textSize="14sp"-->
+    <!--android:maxLines="2"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="￥439"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_shopping_cloth_oldprice"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tx_shopping_cloth_price"-->
+    <!--android:layout_toRightOf="@+id/tx_shopping_cloth_price"-->
+    <!--android:textColor="@color/gray"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--android:text="￥439"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/tx_goods_count"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tx_shopping_cloth_price"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--android:text="x1"-->
+    <!--/>-->
+
+
+    <!--</RelativeLayout>-->
+    <ListView
+        android:id="@+id/list_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

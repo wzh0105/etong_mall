@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homepage_click_list3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/homepage_list3_pic"
+            android:layout_width="@dimen/activity_size_73"
+            android:layout_height="@dimen/activity_size_66"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:background="@mipmap/ex_shop"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/homepage_list3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:text="进口零食"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/activity_size_14" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

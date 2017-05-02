@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <cn.xiaocool.android_etong.util.NoScrollGridView
+        android:id="@+id/gridView_show_pics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:columnWidth="@dimen/activity_size_50"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/activity_size_5"
+        android:numColumns="3"
+        android:padding="@dimen/activity_size_1"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/activity_size_5"
+
+        >
+
+    </cn.xiaocool.android_etong.util.NoScrollGridView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray1"
+        android:text="长按删除轮播图，再次长按取消"
+        android:textSize="@dimen/activity_size_18"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_size_80"
+        android:layout_marginTop="@dimen/activity_size_10"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/edit_rl_upload_pic"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_45"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="上传轮播图"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_rl_confirm"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_45"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确定修改"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+    <!--2016.11.5注释，重写布局-->
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/activity_size_130">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@color/whilte">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic0"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="@dimen/activity_size_2"
+               android:layout_weight="1"
+               android:background="@color/whilte">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic1"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="@dimen/activity_size_2"
+               android:layout_weight="1"
+               android:background="@color/whilte">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic2"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/activity_size_130">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@color/whilte">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic3"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="@dimen/activity_size_2"
+               android:layout_weight="1"
+               android:background="@color/whilte">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic4"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="@dimen/activity_size_2"
+               android:layout_weight="1"
+               android:background="@color/gray2">
+
+               <ImageView
+                   android:id="@+id/editGood_iv_pic5"
+                   android:layout_width="@dimen/activity_size_120"
+                   android:layout_height="@dimen/activity_size_120"
+                   android:layout_centerInParent="true" />
+           </RelativeLayout>
+
+       </LinearLayout>-->
+
+
+</LinearLayout>

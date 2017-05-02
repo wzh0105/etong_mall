@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="76dp">
+
+    <!--周边游-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_zhoubianyou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_zhoubianyou"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="周边游"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--生活服务-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_shenghuofuwu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_shenghuo"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="生活服务"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--KTV-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_ktv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_ktv"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="KTV"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--手机充值-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_shoujichongzhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_shoujichongzhi"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="手机充值"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--全部-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_quanbu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_all"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="全部"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

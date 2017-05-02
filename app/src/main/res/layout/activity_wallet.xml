@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/gray_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="@color/main_color_red"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <RelativeLayout
+                    android:id="@+id/rl_back"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/ic_fanhui_left"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/main_color_red"
+                android:layout_width="match_parent"
+                android:layout_height="147dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_mine_head"
+                    android:layout_marginTop="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@mipmap/ic_touxiang"
+                    />
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_withdraw_record"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:textColor="@color/whilte"-->
+                    <!--android:text="提现记录"-->
+                    <!--/>-->
+                <TextView
+                    android:id="@+id/tx_mine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_mine_head"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"
+                    android:text="e小妞"
+                    android:textColor="@color/whilte"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/main_color_red"
+                android:layout_height="50dp">
+                <!--e购券-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <ImageView
+                        android:id="@+id/img_egouquan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="42dp"
+                        android:background="@mipmap/ic_yue"
+                        />
+                    <TextView
+                        android:id="@+id/tv_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_egouquan"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="14sp"
+                        android:text="余额 0元"
+                        android:textColor="@color/whilte"
+                        />
+
+                </RelativeLayout>
+
+                <!--e购券-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <ImageView
+                        android:id="@+id/img_youhuiquan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="42dp"
+                        android:background="@mipmap/ic_ka_1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_youhuiquan"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="14sp"
+                        android:text="优惠券 0张"
+                        android:textColor="@color/whilte"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp">-->
+                <!--&lt;!&ndash;优惠券&ndash;&gt;-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--&gt;-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_youhuiquan"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:drawableTop="@mipmap/ic_youhuiquan_hong"-->
+                        <!--android:background="@color/white"-->
+                        <!--android:paddingBottom="2dip"-->
+                        <!--android:paddingTop="17dip"-->
+                        <!--android:scaleType="matrix"-->
+                        <!--android:text="优惠券"-->
+                        <!--android:textColor="@color/gray3"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true" />-->
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;现金红包&ndash;&gt;-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--&gt;-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_xianjinhongbao"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:drawableTop="@mipmap/ic_yongjin"-->
+                        <!--android:background="@color/white"-->
+                        <!--android:paddingBottom="2dip"-->
+                        <!--android:paddingTop="17dip"-->
+                        <!--android:scaleType="matrix"-->
+                        <!--android:text="现金红包"-->
+                        <!--android:textColor="@color/gray3"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true" />-->
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;&lt;!&ndash;足迹&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/btn_zuji"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:drawableTop="@mipmap/ic_more_hong"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:background="@color/white"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:paddingBottom="2dip"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:paddingTop="38dip"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:scaleType="matrix"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="敬请期待"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/gray3"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="14sp" />&ndash;&gt;-->
+                <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_bank"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/ic_suo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="银行卡"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ll_set_bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="设置银行卡 >"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--设置支付密码-->
+            <LinearLayout
+                android:id="@+id/ll_set_pay_password"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/ic_suo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付密码"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="修改密码 >"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_withdraw"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/ic_withdraw"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="提现记录"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_withdraw"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button_shape"
+                    android:text="提现"
+                    android:textColor="@color/whilte"
+                    android:textSize="14sp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+
+</LinearLayout>

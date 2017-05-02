@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/whilte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_100"
+        android:background="@color/whilte">
+        <!--左边图片-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/everyday_choiceness_pic"
+                android:layout_width="@dimen/activity_size_100"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <!--右边-->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_size_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/everyday_choiceness_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/activity_size_5"
+                    android:text="A字长连衣裙"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/activity_size_14" />
+                <TextView
+                    android:id="@+id/tv_distence"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text=">500"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/everyday_choiceness_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:background="@mipmap/ic_yellowstar_3_5"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_60"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/everyday_choiceness_price"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/activity_size_5"
+                        android:layout_height="@dimen/activity_size_25"
+                        android:layout_centerVertical="true"
+                        android:text="¥15"
+                        android:textColor="@color/red1"
+                        android:textSize="@dimen/activity_size_15" />
+                    <Button
+                        android:id="@+id/btn_lijian"
+                        android:layout_width="41dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_corners_red"
+                        android:text="立减20"
+                        android:textColor="@color/main_color_red"
+                        android:textSize="11sp"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/everyday_choiceness_btn_buy"
+                        android:layout_width="@dimen/activity_size_90"
+                        android:layout_height="@dimen/activity_size_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_size_10"
+                        android:background="@drawable/button_shape"
+                        android:text="￥29 马上抢"
+                        android:textSize="13sp"
+                        android:textColor="@color/whilte" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_45"
+        android:background="@color/whilte">
+
+        <ImageView
+            android:id="@+id/shop_pic_icon"
+            android:layout_width="@dimen/activity_size_19"
+            android:layout_height="@dimen/activity_size_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:background="@mipmap/ic_shop_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_5"
+            android:layout_toRightOf="@+id/shop_pic_icon"
+            android:text="e小妞"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_14" />
+
+        <TextView
+            android:id="@+id/good_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_size_15"
+            android:text="待发货"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/text_size_14" />
+        <!--灰色线-->
+        <ImageView
+            android:layout_width="@dimen/activity_size_355"
+            android:layout_height="@dimen/activity_size_1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray2" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_good_infor_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whilte">
+
+            <ImageView
+                android:id="@+id/img_shopping_chanpin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@mipmap/ic_chanpin" />
+
+            <TextView
+                android:id="@+id/tx_shopping_cloth_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_shopping_chanpin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/img_shopping_chanpin"
+                android:maxLines="2"
+                android:text="2016春装新款欧美时尚长裙宽松休闲仙女气质超长款拖地连衣裙"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_13" />
+
+            <TextView
+                android:id="@+id/tx_shopping_cloth_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_shopping_cloth_name"
+                android:layout_marginLeft="@dimen/activity_size_13"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/img_shopping_chanpin"
+                android:maxLines="2"
+                android:text="颜色分类:"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_shopping_cloth_name"
+                android:layout_marginLeft="@dimen/activity_size_3"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tx_shopping_cloth_color"
+                android:maxLines="2"
+                android:text="天蓝色"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tx_shopping_cloth_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_shopping_cloth_color"
+                android:layout_marginLeft="@dimen/activity_size_13"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/img_shopping_chanpin"
+                android:maxLines="2"
+                android:text="尺码: "
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_shopping_cloth_color"
+                android:layout_marginLeft="@dimen/activity_size_3"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tx_shopping_cloth_size"
+                android:maxLines="2"
+                android:text="S"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tx_shopping_cloth_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tx_shopping_cloth_size"
+                android:layout_marginRight="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_15"
+                android:text="¥439"
+                android:textColor="@color/main_color_red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tx_goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tx_shopping_cloth_color"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:text="x1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+        <!--灰色线-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whilte">
+
+            <ImageView
+                android:id="@+id/gray_line2"
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@color/gray2" />
+
+
+            <TextView
+                android:id="@+id/good_status_btn_3"
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="@dimen/activity_size_28"
+                android:layout_below="@+id/gray_line2"
+                android:layout_marginBottom="@dimen/activity_size_10"
+                android:layout_marginRight="@dimen/activity_size_15"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:layout_toLeftOf="@+id/good_status_btn_2"
+                android:background="@drawable/btn_shape_gray"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black2"
+                android:textSize="@dimen/activity_size_13" />
+
+
+            <TextView
+                android:id="@+id/good_status_btn_2"
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="@dimen/activity_size_28"
+                android:layout_below="@+id/gray_line2"
+                android:layout_marginBottom="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:layout_marginLeft="@dimen/activity_size_15"
+                android:layout_toLeftOf="@+id/good_status_btn"
+                android:background="@drawable/btn_shape_gray"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black2"
+                android:textSize="@dimen/activity_size_13" />
+
+
+            <TextView
+                android:id="@+id/adapter_order_good_status_btn"
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="@dimen/activity_size_28"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/gray_line2"
+                android:layout_marginBottom="@dimen/activity_size_10"
+                android:layout_marginRight="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@drawable/btn_shape_red"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/red1"
+                android:textSize="@dimen/activity_size_13" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray6"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+
+    <TextView
+        android:id="@+id/search_pop_sort0"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="综合排序" />
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_size_1"
+        android:id="@+id/search_pop_sort1"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上新时间" />
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_size_1"
+        android:id="@+id/search_pop_sort2"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格从低到高" />
+
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_size_1"
+        android:id="@+id/search_pop_sort3"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格从高到低" />
+
+
+</LinearLayout>

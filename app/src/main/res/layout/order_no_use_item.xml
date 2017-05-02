@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_45"
+        android:background="@color/whilte">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:text="韩金城烤肉自助"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_15" />
+
+        <ImageView
+            android:id="@+id/order_icon_next"
+            android:layout_width="@dimen/activity_size_6"
+            android:layout_height="@dimen/activity_size_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_size_15"
+            android:background="@mipmap/ic_next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:layout_marginRight="@dimen/activity_size_10"
+            android:layout_toLeftOf="@+id/order_icon_next"
+            android:text="订单详情"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/activity_size_13" />
+    </RelativeLayout>
+    <!--券信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_45"
+        android:layout_marginTop="@dimen/activity_size_1"
+        android:background="@color/whilte">
+
+        <TextView
+            android:id="@+id/order_ticket_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:text="券码："
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_15" />
+
+        <TextView
+            android:id="@+id/order_ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_5"
+            android:layout_toRightOf="@+id/order_ticket_title"
+            android:text="0101252532"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_15" />
+
+        <TextView
+            android:id="@+id/order_validity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_size_10"
+            android:text="2016.10.20"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/activity_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_size_5"
+            android:layout_toLeftOf="@+id/order_validity_name"
+            android:text="有效期："
+            android:textColor="@color/black3"
+            android:textSize="@dimen/activity_size_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_150"
+        android:background="@color/whilte">
+        <ImageView
+            android:layout_width="@dimen/activity_size_130"
+            android:layout_height="@dimen/activity_size_130"
+            android:background="@mipmap/qrcode"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

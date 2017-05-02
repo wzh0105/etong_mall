@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/mine_btn_myGood"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="宝贝"
+            android:textColor="@color/red"
+            android:background="@color/whilte"/>
+        <Button
+            android:id="@+id/mine_btn_myShop"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="店铺"
+            android:textColor="@color/red"
+            android:background="@color/whilte"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/mine_line_button0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/line_selector_redwhilte"/>
+        <Button
+            android:id="@+id/mine_line_button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/line_selector_redwhilte"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mine_order_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

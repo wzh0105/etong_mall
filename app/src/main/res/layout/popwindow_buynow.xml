@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/whilte">
+
+                <TextView
+                    android:id="@+id/tx_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="126dp"
+                    android:layout_marginTop="10dp"
+                    android:text="￥199"
+                    android:textColor="@color/main_color_red" />
+
+                <TextView
+                    android:id="@+id/tx_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="126dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:maxLines="2"
+                    android:text="商品名称"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="107dp"
+                android:layout_height="107dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/whilte">
+
+                <ImageView
+                    android:id="@+id/img_goods_pic_small"
+                    android:layout_width="101dp"
+                    android:layout_height="101dp"
+                    android:layout_centerInParent="true"
+                    />
+                <!--android:background="@mipmap/ic_xihuan"-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_color"></RelativeLayout>
+
+
+            <cn.xiaocool.android_etong.util.ReboundScrollView
+                android:background="@color/whilte"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_above="@+id/btn_comfirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whilte"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="尺码"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="14dp">-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:background="@drawable/btn_yuanjia_gray"-->
+                        <!--android:text="S"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="12sp" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:background="@drawable/btn_yuanjia_gray"-->
+                        <!--android:text="M"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="12sp" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:background="@drawable/button_shape"-->
+                        <!--android:text="L"-->
+                        <!--android:textColor="@color/whilte"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="颜色分类"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="14sp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="14dp">-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:background="@drawable/btn_yuanjia_gray"-->
+                        <!--android:text="白色"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="12sp" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:background="@drawable/btn_yuanjia_gray"-->
+                        <!--android:text="黄色"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="12sp" />-->
+
+                    <!--<Button-->
+                        <!--android:layout_width="36dp"-->
+                        <!--android:layout_height="21dp"-->
+                        <!--android:layout_marginLeft="14dp"-->
+                        <!--android:background="@drawable/button_shape"-->
+                        <!--android:text="黑色"-->
+                        <!--android:textColor="@color/whilte"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <cn.xiaocool.android_etong.util.NoScrollListView
+                    android:id="@+id/list_property"
+                    android:layout_marginTop="10dp"
+                    android:divider="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </cn.xiaocool.android_etong.util.NoScrollListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="购买数量"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:background="@mipmap/ic_jian" />
+
+                    <TextView
+                        android:id="@+id/tx_goods_count"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_jia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_jia" />
+                </LinearLayout>
+            </LinearLayout>
+            </cn.xiaocool.android_etong.util.ReboundScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/whilte"
+            ></RelativeLayout>
+        <Button
+            android:id="@+id/btn_comfirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_color_red"
+            android:text="确定"
+            android:textColor="@color/whilte"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</RelativeLayout>

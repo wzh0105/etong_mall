@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="76dp">
+    <!--美食-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_meishi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_meishi"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="美食"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--电影-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_dianying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_dianying"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="电影"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+      <!--酒店-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_jiudian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_jiudian"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="酒店"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--外卖-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_waimai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_waimai"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="外卖"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--生活娱乐-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_shenghuoyule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_yule"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="生活娱乐"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

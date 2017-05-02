@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/gray2"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lin"
+        android:background="@color/main_color_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:background="@color/main_color_red"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <ImageView
+            android:id="@+id/saoyisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_saoyisao"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:id="@+id/img_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="44dp"
+            android:background="@mipmap/mine_btn_setting"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_xiaoxi"
+            />
+    </RelativeLayout>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/mine_personal"/>
+
+           <RelativeLayout
+               android:id="@+id/mine_btn_allOrder"
+               android:layout_width="match_parent"
+               android:background="@color/whilte"
+               android:layout_height="40dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="14dp"
+                   android:text="我的订单"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:text="查看全部订单 >"
+                   android:layout_marginRight="19dp"
+                   android:textSize="12sp"
+                   />
+           </RelativeLayout>
+
+            <include layout="@layout/mine_order"/>
+
+            <include layout="@layout/mine_item1"/>
+
+            <include layout="@layout/mine_item2"/>
+            <include layout="@layout/mine_item3"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/ic_banner"
+                />
+
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+</LinearLayout>

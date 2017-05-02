@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray2">
+
+    <include layout="@layout/activity_top"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whilte"
+                ></RelativeLayout>
+            <cn.xiaocool.android_etong.view.PagerSlidingTabStrip
+                android:id="@+id/activity_address_tab"
+                android:background="@color/whilte"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="top"
+                app:selectedTabTextColor="@color/main_color_red"
+                app:pstsShouldExpand="true"
+                />
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_marginTop="1dp"
+                android:id="@+id/activity_address_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+</LinearLayout>

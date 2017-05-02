@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/whilte"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/iv_activity_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/activity_size_5"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="这是e通商城举办的活动"
+                android:textColor="@color/main_color_red" />
+
+            <TextView
+                android:id="@+id/tv_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginRight="@dimen/activity_size_5"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="活动内容很有趣"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_13" />
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/activity_register_btn"
+                android:layout_width="@dimen/activity_size_80"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_size_20"
+                android:background="@drawable/btn_yuanjiao_red"
+                android:text="立即报名"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_10" />
+
+</RelativeLayout>
+</LinearLayout>

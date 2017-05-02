@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:background="@color/whilte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_45"
+        >        <!--返回按钮的布局-->
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/activity_size_60"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_fanhui_left_red"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_15"/>
+        </RelativeLayout>
+        <!--标题头文本-->
+        <TextView
+            android:id="@+id/tv_receive_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:text="消息列表"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:background="@drawable/app_lvjian_rbtn_normal_background"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <ListView
+            android:id="@+id/lv_chat_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0000"
+            android:dividerHeight="8dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

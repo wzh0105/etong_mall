@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="退款类型"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/activity_size_14" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:background="@color/gray4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="仅退款"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/activity_size_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_1"
+                android:background="@color/whilte"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:background="@color/gray4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="退货退款"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/activity_size_13" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="退款金额（元）"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/activity_size_14" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:background="@color/gray4">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/activity_size_13" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_1"
+                android:background="@color/whilte"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="退款原因"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/activity_size_14" />
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray4"
+                >
+
+            </Spinner>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="问题描述"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/activity_size_14" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/activity_size_355"
+                android:layout_height="@dimen/activity_size_100"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:background="@color/gray4">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_size_100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/activity_size_13" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray_title">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="上传凭证照片"
+                    android:textColor="@color/black4"
+                    android:textSize="@dimen/activity_size_14" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_50"
+                android:background="@color/red1"
+                android:text="提交申请"
+                android:textSize="@dimen/activity_size_16"
+                android:gravity="center"
+                android:textColor="@color/whilte"
+                android:layout_marginTop="@dimen/activity_size_15"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

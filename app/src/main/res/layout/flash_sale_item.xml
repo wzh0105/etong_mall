@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/whilte">
+        <!-- 左边-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/new_arrival_good_img1"
+                android:layout_width="@dimen/activity_size_140"
+                android:layout_height="@dimen/activity_size_140"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="#ffffff" />
+        </RelativeLayout>
+        <!-- 右边-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_arrival_good_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="包邮秒杀打底裤"
+                android:textColor="@color/black2"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_30">
+
+                <TextView
+                    android:id="@+id/tv_progress_shengyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="剩余50%"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="13dp"
+                    android:max="100"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_size_30">
+
+                <TextView
+                    android:id="@+id/new_arrival_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:layout_marginTop="@dimen/activity_size_5"
+                    android:singleLine="true"
+                    android:text="¥222"
+                    android:textColor="@color/red1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/new_arrival_good_oprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_size_55"
+                    android:layout_marginTop="@dimen/activity_size_10"
+                    android:singleLine="true"
+                    android:text="¥333"
+                    android:textColor="@color/black3"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/flash_sale_btn"
+                    android:layout_width="@dimen/activity_size_100"
+                    android:layout_height="@dimen/activity_size_45"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_shape"
+                    android:text="抢购"
+                    android:textColor="@color/whilte"
+                    android:textSize="@dimen/activity_size_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

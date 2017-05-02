@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HomePage.TypeListActivity">
+
+    <include layout="@layout/activity_top_search"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_size_45"
+        android:background="@color/gray_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/homepage_wrap_list0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"
+            android:background="@color/gray5"
+            android:gravity="center"
+            android:scrollbars="none"/>
+
+        <GridView
+            android:layout_marginLeft="@dimen/activity_size_5"
+            android:id="@+id/homepage_wrap_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_content"
+            android:layout_weight="1"
+            android:columnWidth="@dimen/activity_size_40"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/activity_size_5"
+            android:numColumns="3"
+            android:padding="@dimen/activity_size_1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/activity_size_5" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

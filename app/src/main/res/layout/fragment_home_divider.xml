@@ -1,0 +1,54 @@
+
+<com.andview.refreshview.XRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xrefresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    tools:context="cn.xiaocool.android_etong.fragment.HomeDividerFragment">
+
+    <com.andview.refreshview.XScrollView
+        android:id="@+id/xscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <cn.xiaocool.android_etong.util.NoScrollGridView
+                android:id="@+id/top_divide"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:numColumns="4">
+            </cn.xiaocool.android_etong.util.NoScrollGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/gray2"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray2">
+
+                <cn.xiaocool.android_etong.util.NoScrollGridView
+                    android:id="@+id/table_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="2"
+                    android:horizontalSpacing="3dp"
+                    android:verticalSpacing="3dp"
+                    >
+                </cn.xiaocool.android_etong.util.NoScrollGridView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.andview.refreshview.XScrollView>
+
+
+
+
+</com.andview.refreshview.XRefreshView>

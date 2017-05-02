@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_marginBottom="13dp"
+                android:background="@mipmap/ic_banner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/whilte"
+                android:layout_marginBottom="@dimen/activity_size_1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="#晒物季#"
+                    android:textColor="@color/main_color_red"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <cn.xiaocool.android_etong.util.NoScrollListView
+                android:id="@+id/get_city_bbs_listView"
+                android:dividerHeight="10dp"
+                android:divider="@color/gray2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+            </cn.xiaocool.android_etong.util.NoScrollListView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

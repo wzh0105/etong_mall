@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <RelativeLayout
+        android:id="@+id/top_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gray_title">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_fanhui_left_red" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改信息"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/business_btn_save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@null"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:text="保存"-->
+            <!--android:textColor="@color/main_color_red"-->
+            <!--android:textSize="17sp" />-->
+    </RelativeLayout>
+
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top_title_rl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cn.xiaocool.android_etong.util.NoScrollListView
+                android:id="@+id/list_pic"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </cn.xiaocool.android_etong.util.NoScrollListView>
+
+            <EditText
+                android:id="@+id/upload_good_details_et"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginBottom="@dimen/activity_size_10"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginRight="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@color/gray4"
+                android:gravity="top" />
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_cpic"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_50"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="上传图片"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_good_details_confirm"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_50"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确定"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--2016.11.4 18:12注释删除-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<EditText-->
+            <!--android:layout_weight="5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/activity_size_10"-->
+            <!--android:layout_marginRight="@dimen/activity_size_10"-->
+            <!--android:layout_marginTop="@dimen/activity_size_10"-->
+            <!--android:layout_marginBottom="@dimen/activity_size_10"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:id="@+id/upload_good_details_et"-->
+            <!--android:background="@color/gray4"-->
+            <!--android:gravity="top"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+</RelativeLayout>

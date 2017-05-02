@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homepage_guess_like_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whilte"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/homepage_guess_like_image"
+            android:layout_width="@dimen/activity_size_180"
+            android:layout_height="@dimen/activity_size_180"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:background="@drawable/icon_error"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5">
+
+            <ImageView
+                android:layout_width="@dimen/activity_size_28"
+                android:layout_height="@dimen/activity_size_18"
+                android:background="@mipmap/ic_rexiao"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_size_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/new_arrival_good_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/black2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/homepage_guess_like_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_5"
+                android:text="¥222"
+                android:textColor="@color/red1"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/homepage_guess_like_payNum"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_size_25"
+                android:gravity="bottom"
+                android:text="1212"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_size_25"
+                android:gravity="bottom"
+                android:text="人已付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

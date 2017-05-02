@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mine_order_et_cancelOrder"
+                android:layout_width="@dimen/activity_size_350"
+                android:layout_height="@dimen/activity_size_100"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@drawable/btn_shape_gray"
+                android:gravity="top"
+                android:hint="请输入取消订单原因"
+                android:paddingLeft="@dimen/activity_size_10"
+                android:paddingTop="@dimen/activity_size_10"
+                android:textSize="@dimen/activity_size_15" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_40"
+                android:layout_marginTop="@dimen/activity_size_20">
+
+                <Button
+                    android:id="@+id/mine_order_btn_confirm"
+                    android:layout_width="@dimen/activity_size_90"
+                    android:layout_height="@dimen/activity_size_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/activity_size_20"
+                    android:background="@drawable/button_shape"
+                    android:text="确定取消"
+                    android:textColor="@color/whilte" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

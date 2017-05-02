@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/gray_title">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_fanhui_left_red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_search_icon"
+                android:layout_width="@dimen/activity_size_40"
+                android:layout_height="@dimen/activity_size_30"
+                android:background="@color/gray6"
+                android:layout_centerVertical="true"
+                />
+
+
+            <ImageView
+                android:layout_width="@dimen/activity_size_17"
+                android:layout_height="@dimen/activity_size_18"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:background="@mipmap/ic_search_gray" />
+            <EditText
+                android:layout_toRightOf="@+id/img_search_icon"
+                android:id="@+id/homepage_search_et"
+                android:layout_width="@dimen/activity_size_250"
+                android:layout_height="@dimen/activity_size_30"
+                android:singleLine="true"
+                android:background="@color/gray6"
+                android:layout_centerVertical="true"
+                android:hint="搜索商家、分类"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/top_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

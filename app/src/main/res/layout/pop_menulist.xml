@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_pop"
+    android:orientation="vertical"
+    >
+    <!--<ListView-->
+        <!--android:id="@+id/menulist"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:divider="#696969"-->
+        <!--android:padding="2dip"-->
+        <!--android:scrollbars="none" >-->
+    <!--</ListView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_40"
+        android:background="@color/whilte"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择分类"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/activity_size_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"/>
+        <ImageView
+            android:layout_width="@dimen/activity_size_15"
+            android:layout_height="@dimen/activity_size_8"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_size_10"
+            android:background="@mipmap/ic_jiantou_down"
+            />
+
+    </RelativeLayout>
+
+    <GridView
+        android:background="@color/gray4"
+        android:id="@+id/menulist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/activity_size_70"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/activity_size_1"
+        android:numColumns="4"
+        android:padding="@dimen/activity_size_1"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/activity_size_1"></GridView>
+</LinearLayout>

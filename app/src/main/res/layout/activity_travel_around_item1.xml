@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/whilte"
+    android:layout_width="match_parent"
+    android:layout_height="83dp">
+    <!--钱包-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_ziranfengguang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_ziranfengguang"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="自然风光"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--会员中心-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_mingshengguji"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_mingshengguji"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="名胜古迹"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--足迹-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_gongyuanyoulechang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_gongyaunyoulechang"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="公园游乐场"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--我要开店-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_qianbao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_wenquan"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="温泉"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

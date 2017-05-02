@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <cn.xiaocool.android_etong.util.ReboundScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <cn.xiaocool.android_etong.util.NoScrollListView
+                    android:id="@+id/get_my_suggestion_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </cn.xiaocool.android_etong.util.NoScrollListView>
+            </cn.xiaocool.android_etong.util.ReboundScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="11"
+            android:background="@color/red1">
+
+            <TextView
+                android:id="@+id/mine_add_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="添加建议"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/activity_size_15" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

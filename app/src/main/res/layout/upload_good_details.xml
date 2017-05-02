@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/gray_title">
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_fanhui_left_red" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/top_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cn.xiaocool.android_etong.util.NoScrollListView
+                android:id="@+id/list_pic"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </cn.xiaocool.android_etong.util.NoScrollListView>
+
+            <EditText
+                android:id="@+id/upload_good_details_et"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginBottom="@dimen/activity_size_10"
+                android:layout_marginLeft="@dimen/activity_size_10"
+                android:layout_marginRight="@dimen/activity_size_10"
+                android:layout_marginTop="@dimen/activity_size_10"
+                android:background="@color/gray4"
+                android:gravity="top" />
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_cpic"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_50"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="上传图片"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/upload_good_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_size_50"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确定"
+                android:textColor="@color/whilte"
+                android:textSize="@dimen/text_size_18" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

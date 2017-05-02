@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F7F7F7">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_fanhui_left_red" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要晒物"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/publish_btn_confirm"
+            android:layout_width="@dimen/activity_size_40"
+            android:layout_height="@dimen/activity_size_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_shape_red"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/red1"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/publish_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/whilte"
+                android:gravity="center_vertical"
+                android:hint="请输入标题,不超过24个字"
+                android:maxLength="24"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/publish_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_150"
+                android:layout_marginTop="@dimen/activity_size_1"
+                android:background="@color/whilte"
+                android:gravity="top"
+                android:hint="请输入要发布的内容,不超过200字"
+                android:maxLength="200"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@color/white">
+                <cn.xiaocool.android_etong.util.NoScrollGridView
+                    android:id="@+id/activity_post_trend_gv_addpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="3dp"
+                    android:verticalSpacing="3dp"
+                    android:numColumns="4">
+                </cn.xiaocool.android_etong.util.NoScrollGridView>
+            </RelativeLayout>
+
+
+
+
+            <cn.xiaocool.android_etong.util.NoScrollGridView
+                android:visibility="gone"
+                android:id="@+id/gridView_show__publish_pics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="@dimen/activity_size_50"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/activity_size_5"
+                android:numColumns="3"
+                android:padding="@dimen/activity_size_1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/activity_size_5">
+
+            </cn.xiaocool.android_etong.util.NoScrollGridView>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whilte">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/publish_iv_add_pic"
+                        android:layout_width="@dimen/activity_size_70"
+                        android:layout_height="@dimen/activity_size_50"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/activity_size_10"
+                        android:layout_marginLeft="@dimen/activity_size_10"
+                        android:layout_marginRight="@dimen/activity_size_10"
+                        android:layout_marginTop="@dimen/activity_size_10"
+                        android:background="@mipmap/ic_shangchuan" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="长按可删除图片"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

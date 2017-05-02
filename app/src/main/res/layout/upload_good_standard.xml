@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whilte"
+            android:orientation="vertical">
+            <!--主要颜色-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_30"
+                android:background="@color/whilte">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="主要颜色"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/activity_size_15" />
+            </LinearLayout>
+
+            <!--按钮组-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_130"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:layout_marginRight="@dimen/activity_size_20"
+                android:background="@color/whilte"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color0"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="黑色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color1"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="灰色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color2"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="白色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color3"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="藏青色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color4"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="蓝色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color5"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="绿色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color6"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="棕色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color7"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="黄色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_color8"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="红色"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_20"
+                android:background="@color/gray2" />
+
+
+            <!--尺码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_30"
+                android:background="@color/whilte">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_size_10"
+                    android:text="尺码"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/activity_size_15" />
+            </LinearLayout>
+
+            <!--尺码按钮组-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_130"
+                android:layout_marginLeft="@dimen/activity_size_20"
+                android:layout_marginRight="@dimen/activity_size_20"
+                android:background="@color/whilte"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size0"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="155"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size1"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="160"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size2"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="165/S"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size3"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="170/M"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size4"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="175/L"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size5"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="180/XL"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size6"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="185/XXL"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size7"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="190/XXXL"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_size_40"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/upload_standard_size8"
+                            android:layout_width="@dimen/activity_size_90"
+                            android:layout_height="@dimen/activity_size_30"
+                            android:layout_centerInParent="true"
+                            android:text="195/XXXL"
+                            android:textColor="@color/black2"
+                            android:background="@drawable/standard_selector_whilte_red" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_100"
+                android:background="@color/gray2" />
+
+            <Button
+                android:id="@+id/upload_standard_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_40"
+                android:background="@color/red1"
+                android:text="上传规格"
+                android:textColor="@color/whilte" />
+
+        </LinearLayout>
+
+
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

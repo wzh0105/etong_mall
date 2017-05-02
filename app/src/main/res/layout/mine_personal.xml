@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color_red"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_mine_head"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@mipmap/ic_touxiang"
+            />
+        <TextView
+            android:id="@+id/tx_mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_mine_head"
+            android:layout_marginTop="19dp"
+            android:text="e通商城"
+            android:textColor="@color/whilte"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/tx_mine_vip"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/tv_oval_yellow"
+            android:layout_alignLeft="@+id/img_mine_head"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:text="v1"
+            android:textColor="@color/whilte"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#E54C4C"
+            android:layout_height="50dp">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+
+            <!--&gt;-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/img_egouquan"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="42dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@mipmap/ic_egouquan"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toRightOf="@+id/img_egouquan"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="7dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="e购券"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/whilte"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+        <!--</RelativeLayout>-->
+            <!--收藏-->
+            <RelativeLayout
+                android:id="@+id/mine_btn_my_like"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/img_shoucang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="42dp"
+                    android:background="@mipmap/ic_shoucang"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_shoucang"
+                    android:layout_marginLeft="7dp"
+                    android:text="收藏"
+                    android:textColor="@color/whilte"
+                    />
+
+            </RelativeLayout>
+            <!--e购券-->
+            <RelativeLayout
+                android:id="@+id/rl_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+                <ImageView
+                    android:id="@+id/img_youhuiquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="42dp"
+                    android:background="@mipmap/ic_youhuiquan"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_youhuiquan"
+                    android:layout_marginLeft="7dp"
+                    android:text="优惠券"
+                    android:textColor="@color/whilte"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

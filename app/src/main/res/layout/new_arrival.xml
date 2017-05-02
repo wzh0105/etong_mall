@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray2">
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_120"
+                android:background="@mipmap/home_new_arrival_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_size_60"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_size_40">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:layout_width="@dimen/activity_size_24"
+                            android:layout_height="@dimen/activity_size_24"
+                            android:background="@mipmap/ic_new"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新品推荐"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black4"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="猜你可能喜欢的商品"
+                        android:textColor="@color/black3"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/activity_size_12"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <cn.xiaocool.android_etong.util.NoScrollGridView
+                android:id="@+id/gridView_new_arrival"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="@dimen/activity_size_70"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/activity_size_5"
+                android:numColumns="2"
+                android:padding="@dimen/activity_size_1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/activity_size_5">
+
+            </cn.xiaocool.android_etong.util.NoScrollGridView>
+        </LinearLayout>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+</LinearLayout>

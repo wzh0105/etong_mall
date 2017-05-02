@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_45"
+        android:layout_weight="0.02"
+        android:background="@color/whilte">
+
+        <ImageView
+            android:id="@+id/shop_pic_icon"
+            android:layout_width="@dimen/activity_size_19"
+            android:layout_height="@dimen/activity_size_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_10"
+            android:background="@mipmap/ic_shop_red" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_size_5"
+            android:layout_toRightOf="@+id/shop_pic_icon"
+            android:text="汉金城担任自助午晚餐"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_14" />
+
+        <TextView
+            android:id="@+id/good_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:text="未使用"
+            android:textColor="@color/red1"
+            android:textSize="@dimen/text_size_14" />
+        <!--灰色线-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/activity_size_355"
+            android:layout_height="@dimen/activity_size_1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_detiels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="e购券"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="1234 2345 234"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:text="有效期："
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-11-11"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tv_time" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_erweima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_size_40"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/erweima"/>
+
+    </RelativeLayout>
+    <!--灰色线-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whilte">
+
+        <ImageView
+            android:id="@+id/gray_line2"
+            android:layout_width="@dimen/activity_size_355"
+            android:layout_height="@dimen/activity_size_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:background="@color/gray2" />
+
+
+        <TextView
+            android:id="@+id/good_status_btn_3"
+            android:layout_width="@dimen/activity_size_80"
+            android:layout_height="@dimen/activity_size_28"
+            android:layout_below="@+id/gray_line2"
+            android:layout_marginBottom="@dimen/activity_size_10"
+            android:layout_marginRight="@dimen/activity_size_15"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:layout_toLeftOf="@+id/good_status_btn_2"
+            android:background="@drawable/btn_shape_gray"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_13" />
+
+
+        <TextView
+            android:id="@+id/good_status_btn_2"
+            android:layout_width="@dimen/activity_size_80"
+            android:layout_height="@dimen/activity_size_28"
+            android:layout_below="@+id/gray_line2"
+            android:layout_marginBottom="@dimen/activity_size_10"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:layout_marginLeft="@dimen/activity_size_15"
+            android:layout_toLeftOf="@+id/good_status_btn"
+            android:background="@drawable/btn_shape_gray"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black2"
+            android:textSize="@dimen/activity_size_13" />
+
+
+        <TextView
+            android:id="@+id/adapter_order_good_status_btn"
+            android:layout_width="@dimen/activity_size_80"
+            android:layout_height="@dimen/activity_size_28"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gray_line2"
+            android:layout_marginBottom="@dimen/activity_size_10"
+            android:layout_marginRight="@dimen/activity_size_10"
+            android:layout_marginTop="@dimen/activity_size_10"
+            android:background="@drawable/btn_shape_red"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red1"
+            android:textSize="@dimen/activity_size_13" />
+
+
+    </RelativeLayout>
+</LinearLayout>

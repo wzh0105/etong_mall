@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/whilte"
+    android:layout_width="match_parent"
+    android:layout_height="83dp">
+    <!--钱包-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_haiyangguan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_haiyangguan"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="海洋馆"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--会员中心-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_dujiacun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_dujiacun"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="度假村"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--足迹-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_jingdian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_jingdian"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="景点"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--我要开店-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_quanbu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_quanbu"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            android:text="全部"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

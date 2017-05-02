@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25'
+
+    defaultConfig {
+        applicationId "cn.xiaocool.android_etong"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile files('libs/locSDK_6.23.jar')
+    compile files('libs/alipaySdk-20151103.jar')
+    compile files('libs/jpush-android-2.1.9.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile files('libs/libammsdk.jar')
+    compile project(':library')
+    //到 volley 是九宫格图片上传
+    compile files('libs/volley.jar')
+
+    //todo refresh
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'cn.finalteam:galleryfinal:1.4.6'
+    compile 'com.baoyz.actionsheet:library:1.1.7'
+    compile 'com.lzy.widget:view-core:0.2.1'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.5.5'
+    compile 'com.android.support:support-v13:23.4.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+
+}

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xiaocool.android_etong"> <!-- 极光 -->
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+    //访问网络权限
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <permission
+        android:name="cn.xiaocool.android_etong.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="cn.xiaocool.android_etong.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".view.etongApplaction"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_920"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="58OG1xnCFSuuiGtV7KGttlSF5EhaLsgm" />
+        <!-- 设置popupmenu颜色 用下面theme -->
+        <activity
+            android:name=".UI.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+            <!-- android:theme="@style/Theme.Incallscreen" -->
+
+        </activity>
+        <activity android:name=".UI.SplashActivity" />
+        <activity android:name=".UI.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.RegisiterActivity" />
+        <activity android:name=".UI.ForgetPasswordActivity" />
+        <activity android:name=".UI.QQBindingActivity" />
+        <!-- HomePage -->
+        <activity android:name=".UI.HomePage.SearchActivity" />
+        <activity android:name=".UI.HomePage.SearchResultShopActivity" />
+        <activity android:name=".UI.HomePage.SearchResultGoodsActivity" />
+        <activity android:name=".UI.HomePage.TypeListActivity" />
+        <activity android:name=".UI.BindPhoneActivity" />
+        <!-- Main -->
+        <activity android:name=".UI.Main.NewArrivalActivity" />
+        <activity android:name=".UI.Main.EverydayBargainActivity" />
+        <activity android:name=".UI.Main.EverydayChoicenessActivity" />
+        <activity android:name=".UI.Main.FlashSaleActivity" />
+        <activity android:name=".UI.Main.QualityLifeActivity" />
+        <activity android:name=".UI.Mine.Business.EditGoodLookPicActivity" />
+        <activity android:name=".UI.Mine.Business.UploadGoodStandardActivity" />
+        <activity android:name=".UI.Mine.Business.AddGoodStandardActivity" />
+        <activity android:name=".UI.Mine.Business.EditStandardItemActivity" />
+        <activity android:name=".UI.Mine.Business.AddGoodAttributeActivity" />
+        <activity android:name=".UI.Mine.Business.UploadInventoryActivity" />
+        <activity android:name=".UI.Main.ZeroActivity" />
+
+        <!-- Mine -->
+        <activity android:name=".UI.Mine.MineEditActivity" />
+        <activity android:name=".UI.Mine.BusinessActivity" />
+        <activity android:name=".UI.Mine.EditNameActivity" />
+        <activity android:name=".UI.Mine.EditPhoneActivity" />
+        <activity android:name=".UI.Mine.AddressActivity" />
+        <activity android:name=".UI.Mine.Business.EditGoodIntroActivity" />
+        <activity android:name=".UI.Mine.Business.ChangeGoodInforActivity" />
+        <activity android:name=".UI.Mine.MyLikeActivity" />
+        <activity android:name=".UI.Mine.PendingPaymentActivity" />
+        <activity android:name=".UI.Mine.PendingUsedActivity" />
+        <activity android:name=".UI.Mine.PendingDeliverActivity" />
+        <activity android:name=".UI.Mine.PendingConfirmActivity" />
+        <activity android:name=".UI.Mine.PendingCommentActivity" />
+        <activity android:name=".UI.Mine.MyEvaluateActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.OrderDetailsActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.DeliverNowActivity" />
+        <activity android:name=".UI.Mine.EditCityActivity" />
+        <activity android:name=".UI.Mine.WalletActivity" />
+        <activity android:name=".UI.Mine.WithdrawSelectActivity" />
+        <activity android:name=".UI.Mine.WithdrawBankActivity" />
+        <activity android:name=".UI.Mine.WithdrawApplyActivity" />
+        <activity android:name=".UI.Mine.WithdrawActivity" />
+        <activity android:name=".UI.Mine.WithdrawRecordActivity" />
+        <activity android:name=".UI.Mine.SelectBankActivity" />
+        <activity android:name=".UI.Mine.Business.ConfirmSecurityActivity" />
+        <activity android:name=".UI.Mine.MineFootprintActivity" />
+        <activity android:name=".UI.Mine.CouponActivity" />
+        <activity android:name=".UI.Mine.CouponInstructionsActivity" />
+        <activity android:name=".UI.Mine.AgentActivity" />
+        <activity android:name=".UI.Mine.Business.ImgTxtDetailActivity" />
+        <activity android:name=".UI.Mine.RightsCenterActivity" />
+        <activity android:name=".UI.Mine.WriteSuggestionsActivity" />
+        <activity android:name=".UI.Mine.GetSuggestionsListActivity" />
+        <activity android:name=".UI.Mine.EditPayPassActivity" />
+        <activity android:name=".UI.Mine.ActivityRegisterActivity" />
+        <activity android:name=".UI.Mine.ActivityRegisterNowActivity" />
+
+        <!-- 收货地址相关活动 -->
+        <activity android:name=".UI.Mine.PersonAddress" />
+        <activity android:name=".UI.Mine.AddressChoose" />
+        <activity android:name=".UI.Mine.BuyAddress" />
+
+        <!-- 商家 -->
+        <activity android:name=".UI.Mine.Business.ApplyShopActivity" />
+        <activity android:name=".UI.Mine.Business.ApplyShopFailActivity" />
+        <activity android:name=".UI.Mine.Business.AuthenticationShopActivity" />
+        <activity android:name=".UI.Mine.Business.AuthenticationPersonActivity" />
+        <activity android:name=".UI.Mine.Business.AuditShopActivity" />
+        <activity android:name=".UI.Mine.Business.ReturnGoodsActivity" />
+        <activity android:name=".UI.Mine.Business.CarouselPicActivity" />
+        <activity android:name=".UI.Mine.Business.TurnoverActivity" />
+        <activity android:name=".UI.Mine.Business.TimeSelectActivity" />
+        <activity android:name=".UI.Mine.Business.SelectTurnoverActivity" />
+        <activity android:name=".UI.Mine.Business.ModifyBankActivity" />
+        <activity android:name=".UI.Local.PublishInformationActivity" />
+        <activity android:name=".UI.Mine.Business.GoodsManageActivity" />
+        <activity android:name=".UI.Mine.Business.EditStoreActivity" />
+        <activity android:name=".UI.Mine.Business.AfterSalesManagementActivity" />
+        <activity android:name=".UI.Mine.Business.OrderManageActivity" />
+        <activity android:name=".UI.Mine.Business.CommonProblemActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.SellerSearchOrderActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.PayNowActivity" />
+        <activity android:name=".UI.Mine.Business.BuyWriteCommentActivity" />
+        <activity android:name=".UI.Mine.Business.MyCommentActivity" />
+        <activity android:name=".UI.Mine.Business.EAgencyShopListActivity" />
+        <activity android:name=".UI.Mine.Business.StartShopGuideActivity" />
+        <activity android:name=".UI.Mine.Business.GoodsManageSearchActivity" />
+        <activity android:name=".UI.Mine.MemberCenterActivity" />
+        <activity android:name=".UI.Mine.Business.SearchStoreHomeActivity" />
+        <activity android:name=".UI.Mine.ShopVerifyStatusActivity" />
+        <activity
+            android:name=".UI.Mine.Business.UploadGoodDetailsActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".UI.Mine.Business.ChangeGoodTypeActivity" />
+        <activity
+            android:name=".UI.Mine.Business.ChangeGoodDetailsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UI.Mine.Business.GetMyEvaluateActivity" />
+        <activity
+            android:name=".UI.Mine.Business.StoreHomepageActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UI.Mine.Business.GoodsDetailActivity" />
+        <activity android:name=".UI.Mine.Business.BuyNowActivity" />
+        <activity
+            android:name=".UI.Mine.Business.ComfirmOrderActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UI.Mine.Business.DeliveryAddressActivity" />
+        <activity android:name=".UI.Mine.MyShoppingOrderListActivity" />
+        <activity android:name=".UI.HomePage.ShopListActivity" />
+        <activity android:name=".UI.Mine.Business.UploadGoodsActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.UploadGoodsPropertyActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.CancelOrderActivity" />
+        <activity android:name=".UI.Mine.Business.SearchMyOrderActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.SellerOrderDetailsActivity" />
+        <activity android:name=".UI.Mine.Business.ChatActivity" />
+        <activity android:name=".UI.Mine.Business.ChatListActivity" />
+        <activity android:name=".UI.Mine.Business.OrderDetails.UploadGoodsPropertyLabelActivity" />
+        <activity android:name=".UI.Mine.Business.AuthenticationClassificationActivity" />
+        <!-- 本地 -->
+        <activity android:name=".UI.Local.FoodActivity" />
+        <activity android:name=".UI.Local.MoiveActivity" />
+        <activity android:name=".UI.Local.ImageDetailActivity" />
+        <activity android:name=".UI.Local.HotelActivity" />
+        <activity android:name=".UI.Local.TakeOutFoodAcitvity" />
+        <activity android:name=".UI.Local.EntertainmentActivity" />
+        <activity android:name=".UI.Local.TravelAroundActivity" />
+        <activity android:name=".UI.Local.ServiceActivity" />
+        <activity android:name=".UI.Local.KtvActivity" />
+        <activity android:name=".UI.Local.RechargeActivity" />
+        <activity android:name=".UI.Local.PanicBuyingActivity" />
+        <activity android:name=".UI.Local.NewUsersActivity" />
+        <activity android:name=".UI.Local.DailySpecialActivity" />
+        <activity android:name=".fragment.Local.LocalAddressActivity" />
+        <activity
+            android:name=".UI.ShoppingCart.StatementActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity android:name=".tool.zxingCode.activity.ResultActivity" />
+        <activity android:name=".tool.zxingCode.activity.CaptureActivity" />
+        <activity android:name=".UI.Local.AllClassifyActivity" />
+        <!-- 收货地址service 写入数据 能够快速加载省市区 -->
+        <service android:name=".service.landDivideServeice" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.xiaocool.android_etong" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="cn.xiaocool.android_etong" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="cn.xiaocool.android_etong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="cn.xiaocool.android_etong" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="07509039e09abf4683bf73a7" />
+
+        <!-- qq活动接口调用 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105613476.data" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".UI.Local.AllStoreOrGoodsActivity" />
+        <activity
+            android:name=".UI.HomePage.GoodsTabActivity"
+            android:label="@string/title_activity_goods_tab"></activity>
+    </application>
+
+</manifest>

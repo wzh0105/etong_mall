@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:background="@color/main_color_red">
+        <!--标题头文本-->
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_20"
+            android:layout_centerInParent="true"
+            android:textColor="@color/whilte"
+            android:text="登录"
+            />
+
+    </RelativeLayout>
+
+
+    <!--手机号输入框-->
+    <RelativeLayout
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:background="@color/whilte">
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:hint="手机号/用户名"
+            android:textColor="@color/black"
+            android:inputType="phone" >
+        </EditText>
+    </RelativeLayout>
+
+
+    <!--密码输入框-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/view_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:hint="密码"/>
+    </RelativeLayout>
+
+
+    <!--登录按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_50"
+        android:layout_marginTop="45dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="356dp"
+            android:layout_height="43dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_shape"
+            android:text="登录"
+            android:textColor="@color/whilte"
+            android:textSize="@dimen/activity_size_18" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tx_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="忘记密码"
+            android:textColor="@color/main_color_red"
+            />
+        <TextView
+            android:id="@+id/tx_zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:text="立即注册"
+            android:textColor="@color/main_color_red"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_disanfnag"
+        />
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_weixin"
+            android:background="#00000000"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_weixin"
+            android:layout_marginLeft="64dp"
+            android:textSize="12sp"
+            android:text="微信"
+            />
+        <Button
+            android:id="@+id/btn_qq"
+            android:background="#00000000"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_qq"
+            android:layout_toRightOf="@+id/btn_weixin"
+            android:layout_marginLeft="63dp"
+            android:textSize="12sp"
+            android:text="QQ"
+            />
+        <Button
+            android:id="@+id/btn_weibo"
+            android:background="#00000000"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_weibo"
+            android:layout_toRightOf="@+id/btn_qq"
+            android:layout_marginLeft="64dp"
+            android:text="微博"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+

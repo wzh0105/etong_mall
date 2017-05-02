@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal"
+    android:background="@color/whilte"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="14dp"
+    android:layout_height="62dp">
+
+    <!--待付款-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/mine_btn_noPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_daifukuan"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="待付款"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--待使用-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/mine_btn_noUse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_daishiyong"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="待使用"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--待发货-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/mine_btn_noDeliver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_daifahuo"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="待发货"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <!--待收货-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/mine_btn_noConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_daishouhuo"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="待确认"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!--待评价-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/mine_btn_noEvaluate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_pinglun"
+            android:background="@color/white"
+            android:paddingBottom="2dip"
+            android:paddingTop="11.5dip"
+            android:scaleType="matrix"
+            android:text="待评论"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

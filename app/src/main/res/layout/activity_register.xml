@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top"></include>
+
+    <cn.xiaocool.android_etong.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.xiaocool.android_etong.util.NoScrollListView
+            android:id="@+id/activity_register_listView"
+            android:dividerHeight="10dp"
+            android:divider="@color/gray2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </cn.xiaocool.android_etong.util.NoScrollListView>
+    </cn.xiaocool.android_etong.util.ReboundScrollView>
+
+</LinearLayout>
